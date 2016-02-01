@@ -1,0 +1,11 @@
+wp-config-local.php
+error_log
+.ftpquota
+*.sql
+wp-content/backups
+**/wponlinebackup/tmp/backup*
+wp-content/uploads/wpcf7_captcha/*
+windmill-srdb.php
+.project
+.DS_Store
+robots.txt

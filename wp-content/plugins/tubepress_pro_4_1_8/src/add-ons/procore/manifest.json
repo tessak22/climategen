@@ -1,0 +1,47 @@
+{
+    "name"    : "tubepress/pro-core",
+    "version" : "1.0.0",
+    "title"   : "TubePress Pro Core",
+    "authors" : [
+        {
+            "name" : "TubePress LLC",
+            "url"  : "http://tubepress.com"
+        }
+    ],
+    "license" : {
+        "type" : "proprietary",
+        "urls" : [ "http://tubepress.com/license/" ]
+    },
+    "container-builder": {
+        "extensions" : [
+            "tubepress_procore_ioc_ProCoreExtension"
+        ],
+        "compiler-passes" : {
+            "tubepress_procore_ioc_ProCompilerPass" : 80000
+        }
+    },
+    "autoload" : {
+        "classmap" : {
+            "CachedFileReader"                                                         : "classes/tubepress/procore/impl/translator/phpgettext/gettext.inc",
+            "FileReader"                                                               : "classes/tubepress/procore/impl/translator/phpgettext/gettext.inc",
+            "gettext_reader"                                                           : "classes/tubepress/procore/impl/translator/phpgettext/gettext.inc",
+            "StreamReader"                                                             : "classes/tubepress/procore/impl/translator/phpgettext/gettext.inc",
+            "StringReader"                                                             : "classes/tubepress/procore/impl/translator/phpgettext/gettext.inc",
+            "tubepress_procore_api_TubePressProInterface"                              : "classes/tubepress/procore/api/TubePressProInterface.php",
+            "tubepress_procore_api_const_ProOptionNames"                               : "classes/tubepress/procore/api/const/ProOptionNames.php",
+            "tubepress_procore_impl_TubePressProBackend"                               : "classes/tubepress/procore/impl/TubePressProBackend.php",
+            "tubepress_procore_impl_listeners_embedded_PlayerApiJsListener"            : "classes/tubepress/procore/impl/listeners/embedded/PlayerApiJsListener.php",
+            "tubepress_procore_impl_listeners_gallery_ProGalleryListener"              : "classes/tubepress/procore/impl/listeners/gallery/ProGalleryListener.php",
+            "tubepress_procore_impl_listeners_html_generation_DetachedPlayerListener"  : "classes/tubepress/procore/impl/listeners/html/generation/DetachedPlayerListener.php",
+            "tubepress_procore_impl_listeners_http_ajax_ShortcodeAjaxCommand"          : "classes/tubepress/procore/impl/listeners/http/ajax/ShortcodeAjaxCommand.php",
+            "tubepress_procore_impl_listeners_media_AbstractHttpItemListener"          : "classes/tubepress/procore/impl/listeners/media/AbstractHttpItemListener.php",
+            "tubepress_procore_impl_listeners_media_MultipleSourcesCollectionListener" : "classes/tubepress/procore/impl/listeners/media/MultipleSourcesCollectionListener.php",
+            "tubepress_procore_impl_listeners_options_set_ProOptionValidity"           : "classes/tubepress/procore/impl/listeners/options/set/ProOptionValidity.php",
+            "tubepress_procore_impl_listeners_search_AjaxSearchListener"               : "classes/tubepress/procore/impl/listeners/search/AjaxSearchListener.php",
+            "tubepress_procore_impl_options_MemoryPersistenceBackend"                  : "classes/tubepress/procore/impl/options/MemoryPersistenceBackend.php",
+            "tubepress_procore_impl_translator_GettextTranslator"                      : "classes/tubepress/procore/impl/translator/GettextTranslator.php",
+            "tubepress_procore_ioc_ProCompilerPass"                                    : "classes/tubepress/procore/ioc/ProCompilerPass.php",
+            "tubepress_procore_ioc_ProCoreExtension"                                   : "classes/tubepress/procore/ioc/ProCoreExtension.php"
+        }
+    }
+}

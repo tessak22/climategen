@@ -1,0 +1,27 @@
+{
+    "name"    : "tubepress/pro-vimeo",
+    "version" : "1.0.0",
+    "title"   : "TubePress Pro Vimeo",
+    "authors" : [
+        {
+            "name" : "TubePress LLC",
+            "url"  : "http://tubepress.com"
+        }
+    ],
+    "license" : {
+        "type" : "proprietary",
+        "urls" : [ "http://tubepress.com/license/" ]
+    },
+    "container-builder" : {
+        "extensions" : [
+            "tubepress_provimeo_ioc_ProVimeoExtension"
+        ]
+    },
+    "autoload" : {
+        "classmap" : {
+            "tubepress_provimeo_impl_listeners_embedded_VimeoEmbeddedPlayerApiListener" : "classes/tubepress/provimeo/impl/listeners/embedded/VimeoEmbeddedPlayerApiListener.php",
+            "tubepress_provimeo_impl_listeners_media_ProHttpItemListener" : "classes/tubepress/provimeo/impl/listeners/media/ProHttpItemListener.php",
+            "tubepress_provimeo_ioc_ProVimeoExtension"                    : "classes/tubepress/provimeo/ioc/ProVimeoExtension.php"
+        }
+    }
+}

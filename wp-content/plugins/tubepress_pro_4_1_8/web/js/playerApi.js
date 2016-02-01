@@ -1,0 +1,6 @@
+/*!
+ * Copyright 2006 - 2015 TubePress LLC (http://tubepress.com/).
+ * This file is part of TubePress Pro.
+ * REDISTRIBUTION PROHIBITED. Please see http://tubepress.com/license for details.
+ */
+(function(d,c,i){var s=i.Beacon,o=s.publish,p=i.Lang.Utils.isDefined,m="tubepress",q="start",k="stop",r="paused",g="buffering",e="error",j="publish",a=m+".item.",l={},b={},h=function(){b[q]=a+q;b[k]=a+k;b[r]=a+r;b[g]=a+g;b[e]=a+e},f=(function(){var v=function(w,x){x.guid=w;l[w]=x;o(a+"load",x)},t=function(A,x){var z,B=[],y,w,C;A=p(A)?A:{};x=p(x)?x:false;for(z in l){if(l.hasOwnProperty(z)){y=true;w=l[z];for(C in A){if(A.hasOwnProperty(C)){if(w.hasOwnProperty(C)){if(w[C]!==A[C]){y=false;break}}}else{if(x){y=false;break}}}if(y){B.push(d.extend({},w))}}}return B},u=function(x){var w=t({guid:x});return w.length===0?null:w[0]};return{getItemByGuid:u,getItemsMatchingFilter:t,register:v}}()),n=(function(){var w=function(A,B){var C=f.getItemByGuid(B);if(C){s.publish(A,C)}},v=function(A){w(b[q],A)},y=function(A){w(b[k],A)},t=function(A){w(b[r],A)},z=function(A){w(b[g],A)},u=function(A){w(b[e],A)},x={};x[j+"Start"]=v;x[j+"Stop"]=y;x[j+"Pause"]=t;x[j+"Buffering"]=z;x[j+"Error"]=u;return x}());h();i.PlayerApi={EventUtility:n,Registry:f}}(jQuery,window,TubePress));

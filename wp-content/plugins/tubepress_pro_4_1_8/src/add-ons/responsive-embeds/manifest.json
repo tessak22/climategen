@@ -1,0 +1,26 @@
+{
+    "name"    : "tubepress/responsive-embeds",
+    "version" : "1.0.0",
+    "title"   : "TubePress Responsive Embeds",
+    "authors" : [
+        {
+            "name" : "TubePress LLC",
+            "url"  : "http://tubepress.com"
+        }
+    ],
+    "license" : {
+        "type" : "proprietary",
+        "urls" : [ "http://tubepress.com/license/" ]
+    },
+    "container-builder": {
+        "extensions" : [
+            "tubepress_responsiveembeds_ioc_ResponsiveEmbedsExtension"
+        ]
+    },
+    "autoload" : {
+        "classmap" : {
+            "tubepress_responsiveembeds_ioc_ResponsiveEmbedsExtension"              : "classes/tubepress/responsiveembeds/ioc/ResponsiveEmbedsExtension.php",
+            "tubepress_responsiveembeds_impl_listeners_embedded_EmbeddedJsInjector" : "classes/tubepress/responsiveembeds/impl/listeners/embedded/EmbeddedJsInjector.php"
+        }
+    }
+}

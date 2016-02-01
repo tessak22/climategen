@@ -1,0 +1,110 @@
+# WINDMILL CUSTOM
+# add www prefix
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^climategen\.org$ [NC]
+RewriteRule ^(.*) http://www.climategen.org/$1 [R=301,L]
+
+# WINDMILL CUSTOM
+# hide git directories and files
+RedirectMatch 404 /\.git
+
+# SEO REDIRECTS per Peter Quale
+Redirect 301 /baffin-island-expedition-2007/a-guide-to-baffin-island/item/612-animals-of-land-and-sea /blog/animals-of-land-and-sea/
+Redirect 301 /arcticantarctic-resources/item/113-how-much-ice-is-on-antarctica /blog/how-much-ice-is-on-antarctica
+Redirect 301 /baffin-island-expedition-2007/a-guide-to-baffin-island/item/618-the-inuit /blog/the-inuit
+Redirect 301 /about-us/employment /connect-with-us/work-with-us/
+Redirect 301 /climate-change-basics/item/92-light-and-heat-from-the-sun /blog/light-and-heat-from-the-sun
+Redirect 301 /baffin-island-expedition-2007/a-guide-to-baffin-island/item/620-ten-survival-tactics-for-the-arctic /blog/ten-survival-tactics-for-the-arctic
+Redirect 301 /about-us/item/1125-key-ingredients-for-successful-youth-engagement /blog/key-ingredients-for-successful-youth-engagement
+Redirect 301 /climate-lessons-blog/item/1175-carbon-calculators-reviewed /blog/carbon-calculators-reviewed
+Redirect 301 /baffin-island-expedition-2007/a-guide-to-baffin-island?start=5 /blog/a-guide-to-baffin-island
+Redirect 301 /curricula-resources/experience-energy /what-we-do/education/climate-change-and-energy-cirricula/curriculum-guides/experience-energy-for-grades-3-8/
+Redirect 301 /climate-lessons-blog/item/1621-chasing-ice-educator-resources /blog/chasing-ice-educator-resources
+Redirect 301 /steger-homestead /
+Redirect 301 /component/jevents/icalrepeat.detail/2014/12/11/83/102/dine-for-climate-french-meadow-bakery-and-cafe /blog/dine-for-climate-a-delicious-solution-to-climate-change/
+Redirect 301 /arcticantarctic-resources/antarctic-resources /blog/chasing-ice-educator-resources/
+Redirect 301 /about-us /who-we-are/
+Redirect 301 /climate-news/item/1844-climate-change-in-costa-ricas-cloud-forest /blog/climate-change-in-costa-ricas-cloud-forest
+Redirect 301 /programs/education /programs/education
+Redirect 301 /climateminnesota/climate-minnesota-convenings/duluth /climateminnesota/climate-minnesota-convenings/duluth
+Redirect 301 /component/k2/item/2107-yeamn-learns-and-leads-at-outfront’s-2015-youth-summit /blog/yeamn-learns-and-leads-at-outfront
+Redirect 301 /arcticantarctic-resources/antarctic-resources/item/107-what-is-life-like-under-the-surface-of-the-antarctic-ocean /blog/what-is-life-like-under-the-surface-of-the-antarctic-ocean
+Redirect 301 /arcticantarctic-resources/item/107-what-is-life-like-under-the-surface-of-the-antarctic-ocean /blog/what-is-life-like-under-the-surface-of-the-antarctic-ocean
+Redirect 301 /minnesota-stories/item/2113-deandras-climate-story /blog/deandras-climate-story
+Redirect 301 /contact-us-2 /connect-with-us/contact-us/
+Redirect 301 /about-us/our-founder /blog/our-founder
+Redirect 301 /component/k2/item/2089-clean-energy-and-jobs-lobby-day-a-huge-success /blog/clean-energy-and-jobs-lobby-day-a-huge-success
+Redirect 301 /climateminnesota/climate-minnesota-convenings/burnsville /climateminnesota/climate-minnesota-convenings/burnsville
+Redirect 301 /baffin-island-expedition-2007/a-guide-to-baffin-island /blog/a-guide-to-baffin-island
+Redirect 301 /baffin-island-expedition-2007/expedition-basecamp-blog/item/532-making-traditional-inuit-clothing /blog/making-traditional-inuit-clothing
+Redirect 301 /baffin-island-expedition-2007/expedition-training/item/593-the-annual-ice-ball /blog/the-annual-ice-ball
+Redirect 301 /about-us/item/1059-learn-more-about-the-british-council-climate-champions-program /blog/learn-more-about-the-british-council-climate-champions-program
+Redirect 301 /about-us/our-mission-a-vision /who-we-are/our-mission-and-vision/
+Redirect 301 /dine4climate /our-impact/the-big-picture/top-12-accomplishments/
+Redirect 301 /enewsletter/item/2109-exciting-opportunities-this-spring /blog/exciting-opportunities-this-spring
+Redirect 301 /about-us/foundation-team /who-we-are/our-team/
+Redirect 301 /climate-lessons-blog/item/2085-climate-lesson-update-february-2015 /blog/climate-lesson-update-february-2015
+Redirect 301 /media-room/video-gallery/viewvideo/33/press-room/kstp-tv-on-the-road-with-jason-davis /blog/kstp-tv-on-the-road-with-jason-davis
+Redirect 301 /about-us/item/1927-mn-high-school-student-gives-closing-remarks-at-huge-earth-day-rally-for-clean-energy-jobs /blog/mn-high-school-student-gives-closing-remarks-at-huge-earth-day-rally-for-clean-energy-jobs
+Redirect 301 /curricula-resources/arctic-community-curriculum/arctic-explorers/item/835-lonnie-dupre-explorers-modern /blog/lonnie-dupre-explorers-modern
+Redirect 301 /climate-lessons-blog/item/1685-book-of-the-month-flight-behavior /blog/book-of-the-month-flight-behavior
+Redirect 301 /summer-institute/summer-institute-2015 /what-we-do/education/professional-development/summer-institute/summer-institute-2015/
+Redirect 301 /climate-news/item/1125-key-ingredients-for-successful-youth-engagement /blog/key-ingredients-for-successful-youth-engagement
+Redirect 301 /summer-institute/item/2003-summer-institute-2015-registration /blog/summer-institute-2015-registration
+Redirect 301 /climate-lessons-blog/item/1539-book-of-the-month-ship-breaker /blog/book-of-the-month-ship-breaker
+Redirect 301 /arcticantarctic-resources/item/84-interesting-facts-about-the-world’s-greatest-ice-sheets /blog/interesting-facts-about-the-worlds-greatest-ice-sheets
+Redirect 301 /baffin-island-expedition-2007/mee-the-team /blog/mee-the-team
+Redirect 301 /climateminnesota/climate-minnesota-convenings/bemidji /blog/climate-minnesota-convenings/bemidji
+Redirect 301 /climate-lessons-blog/item/2104-climate-literacy-presentations-at-nsta-2015-chicago /blog/climate-literacy-presentations-at-nsta-2015-chicago
+Redirect 301 /about-us/item/1956-south-high-school-students-secure-hydration-station-reduce-waste /blog/south-high-school-students-secure-hydration-station-reduce-waste
+Redirect 301 /climate-change-basics/extreme-weather-101 /blog/extreme-weather-101
+Redirect 301 /climate-lessons-blog/item/1012-the-school-bus-and-carbon-emissions /blog/the-school-bus-and-carbon-emissions
+Redirect 301 /our-founder /blog/our-founder
+Redirect 301 /ellesmere-expedition-2008/trail-dispatches/item/747 /blog/trail-dispatch-searching-for-satellites/
+Redirect 301 /arcticantarctic-resources/item/103-does-anyone-own-antarctica /blog/does-anyone-own-antarctica
+Redirect 301 /enewsletter/item/2099-feelin-the-love /blog/feelin-the-love
+Redirect 301 /baffin-island-expedition-2007/expedition-basecamp-blog/item/560-quotes-from-baffin-island-inuit /blog/quotes-from-baffin-island-inuit
+Redirect 301 /volunteer/item/1125-key-ingredients-for-successful-youth-engagement /blog/key-ingredients-for-successful-youth-engagement
+Redirect 301 /climate-lessons-blog/item/2038-climate-lesson-update-december-2014 /blog/climate-lesson-update-december-2014
+Redirect 301 /arcticantarctic-resources/antarctic-resources/item/113-how-much-ice-is-on-antarctica /blog/how-much-ice-is-on-antarctica
+Redirect 301 /climate-change-basics/solutions-renewable/item/92-light-and-heat-from-the-sun /blog/light-and-heat-from-the-sun
+Redirect 301 /climateminnesota/share-your-story /blog/share-your-story
+Redirect 301 /pittarak-expedition-2011-blog/item/1230-crossing-the-fury-and-hecla-strait /blog/crossing-the-fury-and-hecla-strait
+Redirect 301 /baffin-island-expedition-2007/expedition-training/item/586-expedition-food-packout /blog/expedition-food-packout
+Redirect 301 /climate-lessons-blog /blog/climate-lessons-blog
+Redirect 301 /climate-lessons-blog/item/2072-climate-lesson-update-january-2015 /blog/climate-lesson-update-january-2015
+Redirect 301 /enewsletter/item/1732-join-us-at-the-minnesota-state-capitol-on-earth-day /blog/join-us-at-the-minnesota-state-capitol-on-earth-day
+Redirect 301 /arcticantarctic-resources /blog/arcticantarctic-resources
+Redirect 301 /climate-news/item/2111-we-have-exciting-news /blog/we-have-exciting-news
+Redirect 301 /curricula-resources/our-changing-climate-grades-3-6/item/2018-our-changing-climate-grades-3-6-worksheets /blog/our-changing-climate-grades-3-6-worksheets
+Redirect 301 /minnesota-stories/item/2082-nicoles-climate-story /blog/nicoles-climate-story
+Redirect 301 /minnesota-stories/item/2114-mike-mageau’s-climate-story-as-told-to-katie-siegner /blog/mikes-climate-story-as-told-to-katie-siegner/
+Redirect 301 /about-us/wsf-blog /about-us/wsf-blog
+Redirect 301 /climate-news/item/2053-clean-energy-and-jobs-day-at-the-capitol /blog/clean-energy-and-jobs-day-at-the-capitol
+Redirect 301 /curricula-resources/citizen-climate /blog/citizen-climate
+Redirect 301 /baffin-island-expedition-2007 /blog/baffin-island-expedition-2007
+Redirect 301 /climate-lessons-blog/item/1242-what-does-extreme-weather-mean-for-climate-change-educators /blog/what-does-extreme-weather-mean-for-climate-change-educators
+Redirect 301 /expedition-copenhagen-2009/expedition-blog/item/273-the-power-of-broad-representation-locally-and-abroad /blog/the-power-of-broad-representation-locally-and-abroad
+Redirect 301 /baffin-island-expedition-2007/itemlist/user/131 /blog/baffin-island-expedition-2007
+Redirect 301 /component/k2/item/1946-craig-johnson-school-of-environmental-studies /blog/craig-johnson-school-of-environmental-studies
+Redirect 301 /enewsletter/item/2075-big-plans-for-2015 /blog/big-plans-for-2015
+Redirect 301 /summer-institute/itemlist/category/74-arctic-peoples /blog/arctic-peoples
+Redirect 301 /on-the-road-with-will-steger/item/1257-eyewitness-voices /blog/eyewitness-voices
+Redirect 301 /climate-lessons-blog/item/2117-climate-lesson-update-april-2015 /blog/climate-lesson-update-april-2015
+Redirect 301 /about-us/board-of-directors /blog/board-of-directors
+Redirect 301 /climate-lessons-blog/item/2106-climate-lesson-update-march-2015 /blog/climate-lesson-update-march-2015
+Redirect 301 /climateminnesota/climate-minnesota-convenings/crookston /blog/climate-minnesota-convenings/crookston
+Redirect 301 /summer-institute/item/2023-our-changing-climate-grades-6-12-worksheets /blog/our-changing-climate-grades-6-12-worksheets
+Redirect 301 /enewsletter/item/2118-earth-day-is-celebrating-45-years /blog/earth-day-is-celebrating-45-years
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
